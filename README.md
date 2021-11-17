@@ -1,4 +1,4 @@
-# frontend bootcamp website using bootstrap 5
+# frontend bootcamp website using bootstrap 5 and email js
 
 ![Capture d’écran 2021-11-17 151407](https://user-images.githubusercontent.com/73104268/142227740-cac81bba-d31a-4fbf-bbf0-8da77d131d52.png)
 
