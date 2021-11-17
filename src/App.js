@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Showcase from "./components/Showcase";
+import Newsletter from "./components/Newsletter";
+import Boxes from "./components/Boxes";
+import Register from "./components/Register";
+import Learn from "./components/Learn";
+import LearnReact from "./components/LearnReact";
+import Accordion from "./components/Accordion";
+import Instructors from "./components/Instructors";
+import EmailMe from "./components/EmailMe";
+import ContactMap from "./components/ContactMap";
+import Footer from "./components/Footer";
+import "./App.css";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route
+            exact
+            path="/"
+            render={(props) => (
+              <Fragment>
+                <Navbar />
+                <Showcase />
+                <Newsletter />
+                <Boxes />
+                <Learn />
+                <LearnReact />
+                <Accordion />
+                <Instructors />
+                <EmailMe />
+                <ContactMap />
+                <Footer />
+              </Fragment>
+            )}
+          />
+          <Route path="/register" component={Register} />
+        </Switch>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

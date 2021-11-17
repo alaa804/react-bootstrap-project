@@ -1,0 +1,17 @@
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer className="p-5 text-white text-center position-relative">
+      <div className="container">
+        <p className="lead">Copyright &copy; 2021 frontendBootcamp</p>
+        <p className="lead">Contact me on progweb332@gmail.com</p>
+        <a href="!#" className="position-absolute bottom-0 end-0 p-5">
+          <i className="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
